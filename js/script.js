@@ -50,7 +50,7 @@ ScrollReveal().reveal('.about-img, .home-content h1', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Lulusan Sarjana Manajemen', 'Fresh Graduate', 'Newbie FrontEnd Development',],
+    strings: ['Lulusan Sarjana Manajemen', 'Digital Creator', 'FrontEnd Develoer',],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 100,
