@@ -83,8 +83,11 @@ section {
 
 .home-img {
     width: 100%;
-    margin-left: 15rem;
     animation: floatImage 4s ease-in-out infinite;
+}
+
+.home-img img {
+    margin-left: 15rem;
 }
 
 @keyframes floatImage {
@@ -504,6 +507,12 @@ span {
     section {
         padding: 0 6.5rem;
     }
+    .home-img img {
+        margin-left: 0;
+    }
+    .about-img img {
+        margin-left: 0;
+    }
     .portofolio-container {
         grid-template-columns: 1fr;
     }
@@ -511,10 +520,16 @@ span {
 
 @media (max-width: 572px) {
     section {
-        padding: 0 5rem;
+        padding: 0 6rem;
+    }
+    .home-img {
+        margin-left: 0;
     }
     .home-img img {
-        margin-left: -5rem;
+        margin-left: 0;
+    }
+    .about-img {
+        margin-right: 0;
     }
     .about-img img {
         margin-left: 0;
@@ -547,7 +562,7 @@ span {
 
 @media (max-width: 365px) {
     section {
-        padding: 0 4rem;
+        padding: 0 5rem;
     }
     .home-img img {
         width: 100%;
