@@ -82,7 +82,7 @@ section {
 }
 
 .home-img {
-    width: 35vw;
+    width: 100%;
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -168,7 +168,7 @@ span {
 }
 
 .about-img {
-    width: 35vw;
+    width: 100%;
 }
 
 .heading {
@@ -389,13 +389,22 @@ span {
     }
 }
 
-@media (max-width: 991px) {
-    .header {
+@media (max-width: 993px) {
+    header {
+        display: flex;
         padding: 2rem 3%;
     }
 
     section {
-        padding: 10rem 3% 2rem;
+        padding: 0 9.5rem;
+    }
+
+    .about {
+        margin-bottom: 7rem;
+    }
+
+    .about-img {
+        margin-right: 5rem;
     }
 
     .services {
@@ -415,7 +424,13 @@ span {
     }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 881px) {
+    .navbar {
+        display: none;
+    }
+} */
+
+@media (max-width: 881px) {
     #menu-icon {
         display: block;
     }
@@ -441,6 +456,9 @@ span {
     .home {
         flex-direction: column;
     }
+    .home-content {
+        margin-top: 10rem;
+    }
     .home-content h3 {
         font-size: 2.6rem;
     }
@@ -448,21 +466,30 @@ span {
         font-size: 5rem;
     }
     .home-img img {
-        width: 70vw;
+        margin-left: 15rem;
         margin-top: 4rem;
     }
     .about {
         flex-direction: column-reverse;
     }
+    .about-content {
+        margin-top: 10rem;
+    }
     .about img {
-        width: 70vw;
+        margin-left: 15rem;
         margin-top: 4rem;
     }
-    .services h2 {
-        margin-bottom: 3rem;
+    .services-container {
+        margin-top: 3rem;
+    }
+    .services > h2 {
+        margin-bottom: 0;
+    }
+    #portofolio {
+        padding: 10rem 6.8rem 0 6.8rem;
     }
     .portofolio h2 {
-        margin-bottom: 3rem;
+        margin-bottom: 14rem;
     }
     .portofolio-container {
         grid-template-columns: repeat(2, 1fr);
@@ -475,6 +502,21 @@ span {
     }
 }
 
+@media (max-width: 572px) {
+    .home-img img {
+        margin-left: 0;
+    }
+    .about-img img {
+        margin-left: 0;
+    }
+    #portofolio {
+        padding: 3rem 6.8rem 0 6.8rem;
+    }
+    .portofolio h2 {
+        margin-bottom: 3rem;
+    }
+}
+
 @media (max-width: 450px) {
     html {
         font-size: 50%;
@@ -482,14 +524,20 @@ span {
     .contact form .input-box input {
         width: 100%;
     }
+    .home-img img {
+        width: 100%;
+    }
+    .about-img img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 365px) {
     .home-img img {
-        width: 70vw;
+        width: 100%;
     }
     .about-img img {
-        width: 70vw;
+        width: 100%;
     }
     .footer {
         flex-direction: column-reverse;
