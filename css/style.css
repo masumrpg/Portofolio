@@ -454,6 +454,9 @@ span {
         font-size: 2rem;
         margin: 3rem 0;
     }
+    section {
+        padding: 0 8rem;
+    }
     .home {
         flex-direction: column;
     }
@@ -498,12 +501,18 @@ span {
 }
 
 @media (max-width: 617px) {
+    section {
+        padding: 0 6.5rem;
+    }
     .portofolio-container {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 572px) {
+    section {
+        padding: 0 5rem;
+    }
     .home-img img {
         margin-left: -5rem;
     }
@@ -522,6 +531,9 @@ span {
     html {
         font-size: 50%;
     }
+    section {
+        padding: 0 5rem;
+    }
     .contact form .input-box input {
         width: 100%;
     }
@@ -534,6 +546,9 @@ span {
 }
 
 @media (max-width: 365px) {
+    section {
+        padding: 0 4rem;
+    }
     .home-img img {
         width: 100%;
     }
