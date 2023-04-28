@@ -83,6 +83,7 @@ section {
 
 .home-img {
     width: 100%;
+    margin-left: 15rem;
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -504,7 +505,7 @@ span {
 
 @media (max-width: 572px) {
     .home-img img {
-        margin-left: 0;
+        margin-left: -5rem;
     }
     .about-img img {
         margin-left: 0;
